@@ -743,6 +743,11 @@ h1, h2, h3, h4 {
     margin: 0;
 }
 
+.menu-toggle,
+.menu-icon {
+    display: none;
+}
+
 
 /* Responsive */
 
@@ -777,6 +782,8 @@ h1, h2, h3, h4 {
         flex-direction: column;
         justify-content: center;
         gap: 20px;
+        position: relative;
+        flex-wrap: wrap;
     }
 
     .logo {
@@ -785,21 +792,34 @@ h1, h2, h3, h4 {
     }
 
     .nav-bar {
+        display: none;
         width: 100%;
+        order: 4;
     }
 
     .nav-bar ul {
         justify-content: center;
         flex-wrap: wrap;
-        gap: 14px 20px;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        padding: 15px 0;
+    }
+
+    .nav-bar li {
+        width: 100%;
+        text-align: center;
     }
 
     .nav-bar a {
         font-size: 13px;
+        padding: 12px;
+        display: block;
     }
 
     .reserve-btn {
         margin-top: 0;
+        order: 3;
     }
 
     .nav-bar a:hover,
@@ -832,6 +852,25 @@ h1, h2, h3, h4 {
 
     .hero-image img {
         height: 350px;
+    }
+
+    .menu-icon {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        cursor: pointer;
+        order: 2;
+    }
+
+    .menu-icon span {
+        width: 27px;
+        height: 2px;
+        background-color: var(--color-primary);
+        transition: 0.3s;
+    }
+
+    .menu-toggle:checked ~ .nav-bar {
+        display: block;
     }
 }
 
@@ -899,6 +938,7 @@ h1, h2, h3, h4 {
         padding-block: 60px;
     }
 }
+
 
 @media (max-width: 600px) {
     .dishes-grid {

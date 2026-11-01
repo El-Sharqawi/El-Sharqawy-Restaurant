@@ -16,33 +16,40 @@
 </head>
 <body>
 
-    <!-- Header -->
 
-    <header class="header">
-        <div class="container header-content">
+<!-- Header -->
 
-            <a href="index.html" class="logo">
-                <span>الشرقاوي</span>
-                <small>للمأكولات الفاخرة</small>
-            </a>
+<header class="header">
+    <div class="container header-content">
+        <a href="index.html" class="logo">
+            <span>الشرقاوي</span>
+            <small>للمأكولات الفاخرة</small>
+        </a>
 
-            <nav class="nav-bar">
-                <ul>
-                    <li><a href="index.html" aria-current="page">الرئيسية</a></li>
-                    <li><a href="menu.html">قائمة الطعام</a></li>
-                    <li><a href="about.html">عن المطعم</a></li>
-                    <li><a href="contact.html">تواصل معنا</a></li>
-                </ul>
-            </nav>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
 
-            <a href="contact.html" class="reserve-btn">
-                احجز طاولتك
-            </a> 
-        </div>
-    </header>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html" aria-current="page">الرئيسية</a></li>
+                <li><a href="menu.html">قائمة الطعام</a></li>
+                <li><a href="about.html">عن المطعم</a></li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+            </ul>
+        </nav>
+        <a href="contact.html" class="reserve-btn">
+            احجز طاولتك
+        </a> 
+    </div>
+</header>
 
 
 <!-- Main -->
+
 <main>
     <section class="hero">
         <div class="container hero-content">
@@ -61,7 +68,7 @@
                     <a href="menu.html" class="primary-btn">
                         اكتشف قائمة الطعام
                     </a>
-
+                
                 </div>
             </div>
             <div class="hero-image">
@@ -69,6 +76,7 @@
             </div>
         </div>
     </section>
+
 
     <section class="featured">
         <div class="container">
@@ -80,7 +88,7 @@
 
             <div class="dishes-grid">
 
-                <article class="dish-card">
+                <div class="dish-card">
                     <div class="dish-image">
                         <img src="assets/images/dishes/steak.png" alt="ستيك مشوي">
                     </div>
@@ -89,9 +97,9 @@
                             <p>قطعة لحم فاخرة مع صوص الشيف الخاص.</p>
                             <span class="dish-price">850 جنيه</span>
                         </div>             
-                </article>
+                </div>
 
-                <article class="dish-card">
+                <div class="dish-card">
                     <div class="dish-image">
                         <img src="assets/images/dishes/seafood.png" alt="طبق مأكولات بحرية">
                     </div>
@@ -100,9 +108,9 @@
                             <p>تشكيلة بحرية طازجة بتتبيلة مميزة.</p>
                             <span class="dish-price">720  جنيه</span>
                         </div>             
-                </article>
+                </div>
 
-                <article class="dish-card">
+                <div class="dish-card">
                     <div class="dish-image">
                         <img src="assets/images/dishes/dessert.png" alt="حلوى الشوكولاتة">
                     </div>
@@ -111,7 +119,7 @@
                             <p>مزيج غني من الشوكولاتة والكريمة.</p>
                             <span class="dish-price">250  جنيه</span>
                         </div>             
-                </article>
+                </div>
             </div>
 
             <div class="featured-action">
@@ -121,6 +129,7 @@
     </section>
 </main>
 
+<!-- Footer -->
 <footer class="footer">
     <div class="container">
         <p>© 2026 مطعم الشرقاوي. جميع الحقوق محفوظة.</p>

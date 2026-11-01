@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>قائمة الطعام | مطعم الشرقاوي</title>
-
+    <title>المنيو | مطعم الشرقاوي</title>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -15,375 +14,368 @@
 </head>
 <body>
 
-    <header class="header">
-        <div class="container header-content">
+<!-- Header -->
+<header class="header">
+    <div class="container header-content">
+        <a href="index.html" class="logo">
+            <span>الشرقاوي</span>
+            <small>للمأكولات الفاخرة</small>
+        </a>
 
-            <a href="index.html" class="logo">
-                <span>الشرقاوي</span>
-                <small>للمأكولات الفاخرة</small>
-            </a>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="menu.html" aria-current="page">قائمة الطعام</a></li>
+                <li><a href="about.html">عن المطعم</a></li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+            </ul>
+        </nav>
 
-            <nav class="nav-bar">
-                <ul>
-                    <li><a href="index.html">الرئيسية</a></li>
-                    <li><a href="menu.html">قائمة الطعام</a></li>
-                    <li><a href="about.html">عن المطعم</a></li>
-                    <li><a href="contact.html">تواصل معنا</a></li>
-                </ul>
-            </nav>
+        <a href="contact.html" class="reserve-btn">احجز طاولتك</a>
+    </div>
+</header>
 
-            <a href="contact.html" class="reserve-btn">احجز طاولتك</a>
 
+<!-- Main Content -->
+<main>
+    <section class="menu-hero">
+        <div class="container">
+            <span>نكهات استثنائية</span>
+            <h1>قائمة الطعام</h1>
+            <p>اكتشف من النكهات الفاخرة التي أُعدت بعناية لتناسب ذوقك.</p>
         </div>
-    </header>
+    </section>
 
-    <main>
+    <section class="menu-section">
+        <div class="container">
 
-        <section class="menu-hero">
-            <div class="container">
-                <span>نكهات استثنائية</span>
-                <h1>قائمة الطعام</h1>
-                <p>اكتشف من النكهات الفاخرة التي أُعدت بعناية لتناسب ذوقك.</p>
+
+        <!-- 1. المقبلات -->
+            <div class="menu-category">
+                <div class="menu-heading">
+                    <span>01</span>
+                    <h2>المقبلات</h2>
+                </div>
+
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <img src="assets/images/menu/salad.png" alt="سلطة شرقية">
+                        <div class="menu-card-info">
+                            <h3>السلطة الشرقية</h3>
+                            <p>خضروات طازجة مع تتبيلة المطعم الخاصة.</p>
+                            <span>180 جنيه</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="assets/images/menu/soup.png" alt="شوربة كريمة">
+                        <div class="menu-card-info">
+                            <h3>شوربة الكريمة</h3>
+                            <p>شوربة دافئة بقوام كريمي ومذاق غني.</p>
+                            <span>150 جنيه</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="assets/images/menu/bruschetta.png" alt="مقبلات إيطالية">
+                        <div class="menu-card-info">
+                            <h3>مقبلات الشيف</h3>
+                            <p>اختيارات مميزة من المقبلات المحضرة طازجة.</p>
+                            <span>220 جنيه</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="assets/images/menu/mozzarella-sticks.png" alt="أصابع الموزاريلا المقلية">
+                        <div class="menu-card-info">
+                            <h3>أصابع الموزاريلا المقلية</h3>
+                            <p>أصابع جبنة الموزاريلا المقرمشة، تقدم مع صوص الطماطم الإيطالي.</p>
+                            <span>220 جنيه</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="assets/images/menu/chicken-wings.png" alt="أجنحة الدجاج الحارة">
+                        <div class="menu-card-info">
+                            <h3>أجنحة الدجاج الحارة</h3>
+                            <p>أجنحة دجاج متبلة ومقرمشة مع صوص البافلو الخاص.</p>
+                            <span>280 جنيه</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="assets/images/menu/onion-rings.png" alt="حلقات البصل المقرمشة">
+                        <div class="menu-card-info">
+                            <h3>حلقات البصل المقرمشة</h3>
+                            <p>حلقات بصل مغطاة بطبقة مقرمشة مع صوص المطعم.</p>
+                            <span>160 جنيه</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
 
-        <section class="menu-section">
-            <div class="container">
 
-                <!-- 1. المقبلات -->
-                <div class="menu-category">
-                    <div class="menu-heading">
-                        <span>01</span>
-                        <h2>المقبلات</h2>
-                    </div>
-
-                    <div class="menu-grid">
-
-                        <article class="menu-card">
-                            <img src="assets/images/menu/salad.png" alt="سلطة شرقية">
-                            <div class="menu-card-info">
-                                <h3>السلطة الشرقية</h3>
-                                <p>خضروات طازجة مع تتبيلة المطعم الخاصة.</p>
-                                <span>180 جنيه</span>
-                            </div>
-                        </article>
-
-                        <article class="menu-card">
-                            <img src="assets/images/menu/soup.png" alt="شوربة كريمة">
-                            <div class="menu-card-info">
-                                <h3>شوربة الكريمة</h3>
-                                <p>شوربة دافئة بقوام كريمي ومذاق غني.</p>
-                                <span>150 جنيه</span>
-                            </div>
-                        </article>
-
-                        <article class="menu-card">
-                            <img src="assets/images/menu/bruschetta.png" alt="مقبلات إيطالية">
-                            <div class="menu-card-info">
-                                <h3>مقبلات الشيف</h3>
-                                <p>اختيارات مميزة من المقبلات المحضرة طازجة.</p>
-                                <span>220 جنيه</span>
-                            </div>
-                        </article>
-
-                        <article class="menu-card">
-                            <img src="assets/images/menu/mozzarella-sticks.png" alt="أصابع الموزاريلا المقلية">
-                            <div class="menu-card-info">
-                                <h3>أصابع الموزاريلا المقلية</h3>
-                                <p>أصابع جبنة الموزاريلا المقرمشة، تقدم مع صوص الطماطم الإيطالي.</p>
-                                <span>220 جنيه</span>
-                            </div>
-                        </article>
-
-                        <article class="menu-card">
-                            <img src="assets/images/menu/chicken-wings.png" alt="أجنحة الدجاج الحارة">
-                            <div class="menu-card-info">
-                                <h3>أجنحة الدجاج الحارة</h3>
-                                <p>أجنحة دجاج متبلة ومقرمشة مع صوص البافلو الخاص.</p>
-                                <span>280 جنيه</span>
-                            </div>
-                        </article>
-
-                        <article class="menu-card">
-                            <img src="assets/images/menu/onion-rings.png" alt="حلقات البصل المقرمشة">
-                            <div class="menu-card-info">
-                                <h3>حلقات البصل المقرمشة</h3>
-                                <p>حلقات بصل مغطاة بطبقة مقرمشة مع صوص المطعم.</p>
-                                <span>160 جنيه</span>
-                            </div>
-                        </article>
-
-                    </div>
+        <!-- 2. الأطباق الرئيسية -->
+            <div class="menu-category">
+                <div class="menu-heading">
+                    <span>02</span>
+                    <h2>الأطباق الرئيسية</h2>
                 </div>
 
-                <!-- 2. الأطباق الرئيسية -->
-                <div class="menu-category">
-                    <div class="menu-heading">
-                        <span>02</span>
-                        <h2>الأطباق الرئيسية</h2>
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <img src="assets/images/dishes/steak.png" alt="ستيك اللحم">
+                        <div class="menu-card-info">
+                            <h3>ستيك اللحم المشوي</h3>
+                            <p>قطعة لحم فاخرة مع صوص الشيف الخاص.</p>
+                            <span>850 جنيه</span>
+                        </div>
                     </div>
 
-                    <div class="menu-grid">
+                    <div class="menu-card">
+                        <img src="assets/images/menu/lamb-chops.png" alt="ريش ضاني مشوية">
+                        <div class="menu-card-info">
+                            <h3>ريش ضاني مشوية</h3>
+                            <p>ريش ضاني متبلة بالأعشاب مع صوص الروزماري والخضروات.</p>
+                            <span>780 جنيه</span>
+                        </div>
+                    </div>
 
-                        <article class="menu-card">
-                            <img src="assets/images/dishes/steak.png" alt="ستيك اللحم">
-                            <div class="menu-card-info">
-                                <h3>ستيك اللحم المشوي</h3>
-                                <p>قطعة لحم فاخرة مع صوص الشيف الخاص.</p>
-                                <span>850 جنيه</span>
-                            </div>
-                        </article>
+                    <div class="menu-card">
+                        <img src="assets/images/menu/pasta.png" alt="باستا إيطالية">
+                        <div class="menu-card-info">
+                            <h3>باستا ألفريدو</h3>
+                            <p>باستا إيطالية بصوص الكريمة والفطر.</p>
+                            <span>390 جنيه</span>
+                        </div>
+                    </div>
 
-                        <article class="menu-card">
-                            <img src="assets/images/menu/lamb-chops.png" alt="ريش ضاني مشوية">
-                            <div class="menu-card-info">
-                                <h3>ريش ضاني مشوية</h3>
-                                <p>ريش ضاني متبلة بالأعشاب مع صوص الروزماري والخضروات.</p>
-                                <span>780 جنيه</span>
-                            </div>
-                        </article>
+                    <div class="menu-card">
+                        <img src="assets/images/menu/ribs.png" alt="ضلوع لحم">
+                        <div class="menu-card-info">
+                            <h3>ضلوع اللحم</h3>
+                            <p>ضلوع مطهية ببطء مع صوص خاص.</p>
+                            <span>780 جنيه</span>
+                        </div>
+                    </div>
 
-                        <article class="menu-card">
-                            <img src="assets/images/menu/pasta.png" alt="باستا إيطالية">
-                            <div class="menu-card-info">
-                                <h3>باستا ألفريدو</h3>
-                                <p>باستا إيطالية بصوص الكريمة والفطر.</p>
-                                <span>390 جنيه</span>
-                            </div>
-                        </article>
+                    <div class="menu-card">
+                        <img src="assets/images/menu/grilled-chicken.png" alt="صدور الدجاج المشوية">
+                        <div class="menu-card-info">
+                            <h3>صدور الدجاج المشوية</h3>
+                            <p>صدور دجاج مشوية بتتبيلة خاصة مع البطاطس والخضروات.</p>
+                            <span>490 جنيه</span>
+                        </div>
+                    </div>
 
-                        <article class="menu-card">
-                            <img src="assets/images/menu/ribs.png" alt="ضلوع لحم">
-                            <div class="menu-card-info">
-                                <h3>ضلوع اللحم</h3>
-                                <p>ضلوع مطهية ببطء مع صوص خاص.</p>
-                                <span>780 جنيه</span>
-                            </div>
-                        </article>
-
-                        <article class="menu-card">
-                            <img src="assets/images/menu/grilled-chicken.png" alt="صدور الدجاج المشوية">
-                            <div class="menu-card-info">
-                                <h3>صدور الدجاج المشوية</h3>
-                                <p>صدور دجاج مشوية بتتبيلة خاصة مع البطاطس والخضروات.</p>
-                                <span>490 جنيه</span>
-                            </div>
-                        </article>
-
-                        <article class="menu-card">
-                            <img src="assets/images/menu/beef-burger.png" alt="برجر اللحم الفاخر">
-                            <div class="menu-card-info">
-                                <h3>برجر اللحم الفاخر</h3>
-                                <p>قطعة لحم مشوية مع الجبنة الشيدر والخضروات وصوص خاص.</p>
-                                <span>420 جنيه</span>
-                            </div>
-                        </article>
-
+                    <div class="menu-card">
+                        <img src="assets/images/menu/beef-burger.png" alt="برجر اللحم الفاخر">
+                        <div class="menu-card-info">
+                            <h3>برجر اللحم الفاخر</h3>
+                            <p>قطعة لحم مشوية مع الجبنة الشيدر والخضروات وصوص خاص.</p>
+                            <span>420 جنيه</span>
+                        </div>
                     </div>
                 </div>
-
-                <!-- 3. المأكولات البحرية -->
-                <div class="menu-category">
-                    <div class="menu-heading">
-                        <span>03</span>
-                        <h2>المأكولات البحرية</h2>
-                    </div>
-
-                    <div class="menu-grid">
-
-                        <article class="menu-card">
-                            <img src="assets/images/dishes/seafood.png" alt="مأكولات بحرية">
-                            <div class="menu-card-info">
-                                <h3>طبق المأكولات البحرية</h3>
-                                <p>تشكيلة بحرية طازجة بتتبيلة مميزة.</p>
-                                <span>720 جنيه</span>
-                            </div>
-                        </article>
-
-                        <article class="menu-card">
-                            <img src="assets/images/menu/salmon.png" alt="سلمون مشوي">
-                            <div class="menu-card-info">
-                                <h3>السلمون المشوي</h3>
-                                <p>سلمون طازج مع صوص الليمون والأعشاب.</p>
-                                <span>690 جنيه</span>
-                            </div>
-                        </article>
-
-                        <article class="menu-card">
-                            <img src="assets/images/menu/shrimp.png" alt="جمبري مشوي">
-                            <div class="menu-card-info">
-                                <h3>الجمبري المشوي</h3>
-                                <p>جمبري متبل ومشوي على الطريقة الخاصة.</p>
-                                <span>620 جنيه</span>
-                            </div>
-                        </article>
-
-                        <article class="menu-card">
-                            <img src="assets/images/menu/garlic-butter-shrimp.png" alt="جمبري بالزبدة والثوم">
-                            <div class="menu-card-info">
-                                <h3>جمبري بالزبدة والثوم</h3>
-                                <p>جمبري طازج مطهو بالزبدة والثوم والبقدونس.</p>
-                                <span>580 جنيه</span>
-                            </div>
-                        </article>
-
-                        <article class="menu-card">
-                            <img src="assets/images/menu/grilled-seabass.png" alt="سمك قاروص مشوي">
-                            <div class="menu-card-info">
-                                <h3>سمك قاروص مشوي</h3>
-                                <p>سمك قاروص طازج مشوي بالأعشاب والليمون مع الأرز.</p>
-                                <span>650 جنيه</span>
-                            </div>
-                        </article>
-
-                        <article class="menu-card">
-                            <img src="assets/images/menu/fried-calamari.png" alt="كاليماري مقلي">
-                            <div class="menu-card-info">
-                                <h3>كاليماري مقلي</h3>
-                                <p>حلقات كاليماري مقلية ومقرمشة مع صوص الثوم والليمون.</p>
-                                <span>460 جنيه</span>
-                            </div>
-                        </article>
-
-                    </div>
-                </div>
-
-                <!-- 4.الحلويات -->
-                <div class="menu-category">
-                    <div class="menu-heading">
-                        <span>04</span>
-                        <h2>الحلويات</h2>
-                    </div>
-
-                    <div class="menu-grid">
-
-                        <article class="menu-card">
-                            <img src="assets/images/dishes/dessert.png" alt="حلوى الشوكولاتة">
-                            <div class="menu-card-info">
-                                <h3>حلوى الشوكولاتة</h3>
-                                <p>مزيج غني من الشوكولاتة والكريمة.</p>
-                                <span>250 جنيه</span>
-                            </div>
-                        </article>
-
-                        <article class="menu-card">
-                            <img src="assets/images/menu/cheesecake.png" alt="تشيز كيك">
-                            <div class="menu-card-info">
-                                <h3>تشيز كيك</h3>
-                                <p>حلوى كريمية مع طبقة فواكه طازجة.</p>
-                                <span>220 جنيه</span>
-                            </div>
-                        </article>
-
-                        <article class="menu-card">
-                            <img src="assets/images/menu/tiramisu.png" alt="تيراميسو">
-                            <div class="menu-card-info">
-                                <h3>تيراميسو</h3>
-                                <p>حلوى إيطالية بطعم القهوة والكاكاو.</p>
-                                <span>240 جنيه</span>
-                            </div>
-                        </article>
-
-                        <article class="menu-card">
-                            <img src="assets/images/menu/molten-cake.png" alt="مولتن كيك بالشوكولاتة">
-                            <div class="menu-card-info">
-                                <h3>مولتن كيك بالشوكولاتة</h3>
-                                <p>كيكة شوكولاتة دافئة بقلب سائل مع آيس كريم الفانيليا.</p>
-                                <span>230 جنيه</span>
-                            </div>
-                        </article>
-
-                        <article class="menu-card">
-                            <img src="assets/images/menu/pistachio-kunafa.png" alt="كنافة بالفستق">
-                            <div class="menu-card-info">
-                                <h3>كنافة بالفستق</h3>
-                                <p>كنافة ذهبية محشوة بالقشطة ومزينة بالفستق الحلبي.</p>
-                                <span>200 جنيه</span>
-                            </div>
-                        </article>
-
-                        <article class="menu-card">
-                            <img src="assets/images/menu/creme-brulee.png" alt="كريم بروليه">
-                            <div class="menu-card-info">
-                                <h3>كريم بروليه</h3>
-                                <p>كريمة فرنسية ناعمة مغطاة بطبقة سكر مكرمل ومقرمشة.</p>
-                                <span>190 جنيه</span>
-                            </div>
-                        </article>
-
-                    </div>
-                </div>
-
-                <!-- 5. المشروبات -->
-                <div class="menu-category">
-                    <div class="menu-heading">
-                        <span>05</span>
-                        <h2>المشروبات</h2>
-                    </div>
-
-                    <div class="menu-grid">
-
-                        <article class="menu-card">
-                            <img src="assets/images/menu/coffee.png" alt="قهوة">
-                            <div class="menu-card-info">
-                                <h3>القهوة الفاخرة</h3>
-                                <p>قهوة محضرة من أجود حبوب البن.</p>
-                                <span>120 جنيه</span>
-                            </div>
-                        </article>
-
-                        <article class="menu-card">
-                            <img src="assets/images/menu/mango-juice.png" alt="عصير مانجو طازج">
-                            <div class="menu-card-info">
-                                <h3>عصير مانجو طازج</h3>
-                                <p>مانجو طبيعية طازجة تقدم باردة.</p>
-                                <span>110 جنيه</span>
-                            </div>
-                        </article>
-
-                        <article class="menu-card">
-                            <img src="assets/images/menu/mocktail.png" alt="مشروب منعش">
-                            <div class="menu-card-info">
-                                <h3>مشروب الشرقاوي</h3>
-                                <p>مزيج منعش من الفواكه بنكهات مميزة.</p>
-                                <span>160 جنيه</span>
-                            </div>
-                        </article>
-
-                        <article class="menu-card">
-                            <img src="assets/images/menu/strawberry-smoothie.png" alt="سموذي الفراولة">
-                            <div class="menu-card-info">
-                                <h3>سموذي الفراولة</h3>
-                                <p>فراولة طازجة ممزوجة بالثلج وقليل من العسل.</p>
-                                <span>130 جنيه</span>
-                            </div>
-                        </article>
-
-                        <article class="menu-card">
-                            <img src="assets/images/menu/iced-caramel-latte.png" alt="آيس كراميل لاتيه">
-                            <div class="menu-card-info">
-                                <h3>آيس كراميل لاتيه</h3>
-                                <p>إسبريسو مع الحليب البارد وصوص الكراميل.</p>
-                                <span>150 جنيه</span>
-                            </div>
-                        </article>
-
-                        <article class="menu-card">
-                            <img src="assets/images/menu/lemon-mojito.png" alt="موهيتو الليمون والنعناع">
-                            <div class="menu-card-info">
-                                <h3>موهيتو الليمون والنعناع</h3>
-                                <p>ليمون طازج ونعناع مع مياه غازية وثلج.</p>
-                                <span>140 جنيه</span>
-                            </div>
-                        </article>
-
-                    </div>
-                </div>
-
             </div>
-        </section>
 
-    </main>
+
+        <!-- 3. المأكولات البحرية -->
+            <div class="menu-category">
+                <div class="menu-heading">
+                    <span>03</span>
+                    <h2>المأكولات البحرية</h2>
+                </div>
+
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <img src="assets/images/dishes/seafood.png" alt="مأكولات بحرية">
+                        <div class="menu-card-info">
+                            <h3>طبق المأكولات البحرية</h3>
+                            <p>تشكيلة بحرية طازجة بتتبيلة مميزة.</p>
+                            <span>720 جنيه</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="assets/images/menu/salmon.png" alt="سلمون مشوي">
+                        <div class="menu-card-info">
+                            <h3>السلمون المشوي</h3>
+                            <p>سلمون طازج مع صوص الليمون والأعشاب.</p>
+                            <span>690 جنيه</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="assets/images/menu/shrimp.png" alt="جمبري مشوي">
+                        <div class="menu-card-info">
+                            <h3>الجمبري المشوي</h3>
+                            <p>جمبري متبل ومشوي على الطريقة الخاصة.</p>
+                            <span>620 جنيه</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="assets/images/menu/garlic-butter-shrimp.png" alt="جمبري بالزبدة والثوم">
+                        <div class="menu-card-info">
+                            <h3>جمبري بالزبدة والثوم</h3>
+                            <p>جمبري طازج مطهو بالزبدة والثوم والبقدونس.</p>
+                            <span>580 جنيه</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="assets/images/menu/grilled-seabass.png" alt="سمك قاروص مشوي">
+                        <div class="menu-card-info">
+                            <h3>سمك قاروص مشوي</h3>
+                            <p>سمك قاروص طازج مشوي بالأعشاب والليمون مع الأرز.</p>
+                            <span>650 جنيه</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="assets/images/menu/fried-calamari.png" alt="كاليماري مقلي">
+                        <div class="menu-card-info">
+                            <h3>كاليماري مقلي</h3>
+                            <p>حلقات كاليماري مقلية ومقرمشة مع صوص الثوم والليمون.</p>
+                            <span>460 جنيه</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        <!-- 4.الحلويات -->
+            <div class="menu-category">
+                <div class="menu-heading">
+                    <span>04</span>
+                    <h2>الحلويات</h2>
+                </div>
+
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <img src="assets/images/dishes/dessert.png" alt="حلوى الشوكولاتة">
+                        <div class="menu-card-info">
+                            <h3>حلوى الشوكولاتة</h3>
+                            <p>مزيج غني من الشوكولاتة والكريمة.</p>
+                            <span>250 جنيه</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="assets/images/menu/cheesecake.png" alt="تشيز كيك">
+                        <div class="menu-card-info">
+                            <h3>تشيز كيك</h3>
+                            <p>حلوى كريمية مع طبقة فواكه طازجة.</p>
+                            <span>220 جنيه</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="assets/images/menu/tiramisu.png" alt="تيراميسو">
+                        <div class="menu-card-info">
+                            <h3>تيراميسو</h3>
+                            <p>حلوى إيطالية بطعم القهوة والكاكاو.</p>
+                            <span>240 جنيه</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="assets/images/menu/molten-cake.png" alt="مولتن كيك بالشوكولاتة">
+                        <div class="menu-card-info">
+                            <h3>مولتن كيك بالشوكولاتة</h3>
+                            <p>كيكة شوكولاتة دافئة بقلب سائل مع آيس كريم الفانيليا.</p>
+                            <span>230 جنيه</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="assets/images/menu/pistachio-kunafa.png" alt="كنافة بالفستق">
+                        <div class="menu-card-info">
+                            <h3>كنافة بالفستق</h3>
+                            <p>كنافة ذهبية محشوة بالقشطة ومزينة بالفستق الحلبي.</p>
+                            <span>200 جنيه</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="assets/images/menu/creme-brulee.png" alt="كريم بروليه">
+                        <div class="menu-card-info">
+                            <h3>كريم بروليه</h3>
+                            <p>كريمة فرنسية ناعمة مغطاة بطبقة سكر مكرمل ومقرمشة.</p>
+                            <span>190 جنيه</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        <!-- 5. المشروبات -->
+            <div class="menu-category">
+                <div class="menu-heading">
+                    <span>05</span>
+                    <h2>المشروبات</h2>
+                </div>
+
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <img src="assets/images/menu/coffee.png" alt="قهوة">
+                        <div class="menu-card-info">
+                            <h3>القهوة الفاخرة</h3>
+                            <p>قهوة محضرة من أجود حبوب البن.</p>
+                            <span>120 جنيه</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="assets/images/menu/mango-juice.png" alt="عصير مانجو طازج">
+                        <div class="menu-card-info">
+                            <h3>عصير مانجو طازج</h3>
+                            <p>مانجو طبيعية طازجة تقدم باردة.</p>
+                            <span>110 جنيه</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="assets/images/menu/mocktail.png" alt="مشروب منعش">
+                        <div class="menu-card-info">
+                            <h3>مشروب الشرقاوي</h3>
+                            <p>مزيج منعش من الفواكه بنكهات مميزة.</p>
+                            <span>160 جنيه</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="assets/images/menu/strawberry-smoothie.png" alt="سموذي الفراولة">
+                        <div class="menu-card-info">
+                            <h3>سموذي الفراولة</h3>
+                            <p>فراولة طازجة ممزوجة بالثلج وقليل من العسل.</p>
+                            <span>130 جنيه</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="assets/images/menu/iced-caramel-latte.png" alt="آيس كراميل لاتيه">
+                        <div class="menu-card-info">
+                            <h3>آيس كراميل لاتيه</h3>
+                            <p>إسبريسو مع الحليب البارد وصوص الكراميل.</p>
+                            <span>150 جنيه</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="assets/images/menu/lemon-mojito.png" alt="موهيتو الليمون والنعناع">
+                        <div class="menu-card-info">
+                            <h3>موهيتو الليمون والنعناع</h3>
+                            <p>ليمون طازج ونعناع مع مياه غازية وثلج.</p>
+                            <span>140 جنيه</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 
     <footer class="footer">
         <div class="container">
