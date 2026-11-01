@@ -779,32 +779,42 @@ h1, h2, h3, h4 {
 
 @media (max-width: 768px) {
     .header-content {
-        position: relative;
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
         align-items: center;
-        justify-content: space-between;
-        row-gap: 15px;
+        gap: 10px;
     }
 
     .logo {
-        order: 1;
-        width: 100%;
-        text-align: center;
+        grid-column: 2;
+        grid-row: 1;
+        width: auto;
         align-items: center;
+        text-align: center;
+        margin-left: 30px;
+    }
+
+    .logo span {
+        font-size: 27px;
+    }
+
+    .logo small {
+        font-size: 10px;
     }
 
     .nav-bar {
         display: none;
+        grid-column: 1 / -1;
+        grid-row: 2;
         width: 100%;
-        order: 4;
+        text-align: center;
     }
 
     .nav-bar ul {
-        justify-content: center;
-        flex-wrap: wrap;
+        display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         gap: 0;
         padding: 15px 0;
     }
@@ -815,15 +825,22 @@ h1, h2, h3, h4 {
     }
 
     .nav-bar a {
-        font-size: 13px;
+        display: block;
         padding: 12px;
+    }
+
+    .menu-toggle:checked ~ .nav-bar {
         display: block;
     }
 
     .reserve-btn {
-        margin-top: 0;
-        order: 3;
-        margin-inline-start: auto;
+        grid-column: 3;
+        grid-row: 1;
+        justify-self: end;
+        margin: 0;
+        padding: 8px 10px;
+        font-size: 11px;
+        white-space: nowrap;
     }
 
     .nav-bar a:hover,
@@ -858,23 +875,26 @@ h1, h2, h3, h4 {
         height: 350px;
     }
 
+    .menu-toggle {
+        display: none;
+    }
+
     .menu-icon {
         display: flex;
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: start;
         flex-direction: column;
-        gap: 6px;
+        gap: 5px;
         cursor: pointer;
-        order: 2;
+        padding: 5px;
     }
 
     .menu-icon span {
-        width: 27px;
+        width: 25px;
         height: 2px;
         background-color: var(--color-primary);
         transition: 0.3s;
-    }
-
-    .menu-toggle:checked ~ .nav-bar {
-        display: block;
     }
 }
 
