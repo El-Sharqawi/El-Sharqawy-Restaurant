@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
-    margin: 2px;
-    padding: 2px;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -16,7 +16,7 @@ h1, h2, h3, h4 {
 }
 
 .container {
-    width: min(100% - 40px var(--container-width));
+    width: min(100% - 40px, var(--container-width));
     margin-inline: auto;
 }
 
@@ -36,6 +36,7 @@ h1, h2, h3, h4 {
 .logo {
     display: flex;
     flex-direction: column;
+    flex-shrink: 0;
     text-decoration: none;
     color: var(--color-primary);
 }
@@ -51,12 +52,19 @@ h1, h2, h3, h4 {
     font-family: var(--font-body);
     color: var(--color-muted);
     font-size: 11px;
+    margin: 5px;
+}
+
+.nav-bar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .nav-bar ul {
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: clamp(16px, 2.5vw, 32px);;
     list-style: none;
 }
 
@@ -76,7 +84,7 @@ h1, h2, h3, h4 {
     right: 0;
     width: 0;
     height: 2px;
-    border-color: var(--color-primary);
+    background-color: var(--color-primary);
     transition: width 0.3s ease;
 }
 
@@ -92,9 +100,11 @@ h1, h2, h3, h4 {
 
 .reserve-btn {
     text-decoration: none;
-    border-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    background-color: var(--color-primary);
     color: var(--color-background);
     padding: 12px 22px;
+    flex-shrink: 0;
     border-radius: var(--radius-sm);
     font-family: var(--font-body);
     font-size: 13px;
@@ -105,6 +115,7 @@ h1, h2, h3, h4 {
 .reserve-btn:hover,
 .reserve-btn:focus-visible {
     background-color: var(--color-text);
+    color: var(--color-background);
 }
 
 .hero {
@@ -156,8 +167,7 @@ h1, h2, h3, h4 {
     margin-top: 32px;
 }
 
-.primary-btn,
-.secondary-btn {
+.primary-btn {
     display: inline-block;
     text-decoration: none;
     padding: 13px 24px;
@@ -171,19 +181,10 @@ h1, h2, h3, h4 {
     color: var(--color-background);
 }
 
-.secondary-btn {
-    border: 1px solid var(--color-primary);
-    color: var(--color-primary);
-}
-
 .primary-btn:hover {
     background-color: var(--color-text);
 }
 
-.secondary-btn:hover {
-    background-color: var(--color-primary);
-    color: var(--color-background);
-}
 
 .hero-image {
     flex: 1;
@@ -478,7 +479,7 @@ h1, h2, h3, h4 {
 
 .value-card {
     padding: 30px 22px;
-    background-color: var(--color-Surface);
+    background-color: var(--color-surface);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-lg);
     transition: transform 0.3s ease, border-color 0.3s ease;
@@ -773,23 +774,37 @@ h1, h2, h3, h4 {
 
 @media (max-width: 768px) {
     .header-content {
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
+        gap: 20px;
     }
 
     .logo {
-        width: 100%;
+        width: auto;
         align-items: center;
     }
 
+    .nav-bar {
+        width: 100%;
+    }
+
     .nav-bar ul {
-        gap: 18px;
-        flex-wrap: wrap;
         justify-content: center;
+        flex-wrap: wrap;
+        gap: 14px 20px;
+    }
+
+    .nav-bar a {
+        font-size: 13px;
     }
 
     .reserve-btn {
-        margin-top: 5px;
+        margin-top: 0;
+    }
+
+    .nav-bar a:hover,
+    .nav-bar a:focus-visible {
+        color: var(--color-primary);
     }
 
     .hero {
@@ -927,6 +942,11 @@ h1, h2, h3, h4 {
 @media (max-width: 480px) {
     .nav-bar ul {
         gap: 12px;
+    }
+
+    .nav-bar a:hover,
+    .nav-bar a:focus-visible {
+        color: var(--color-primary);
     }
 
     .nav-bar a {
