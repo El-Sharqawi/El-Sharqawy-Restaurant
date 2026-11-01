@@ -64,7 +64,7 @@ h1, h2, h3, h4 {
 .nav-bar ul {
     display: flex;
     align-items: center;
-    gap: clamp(16px, 2.5vw, 32px);;
+    gap: clamp(16px, 2.5vw, 32px);
     list-style: none;
 }
 
@@ -779,31 +779,43 @@ h1, h2, h3, h4 {
 
 @media (max-width: 768px) {
     .header-content {
-        flex-direction: column;
-        justify-content: center;
-        gap: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 15px;
         position: relative;
-        flex-wrap: wrap;
     }
 
     .logo {
-        width: auto;
-        align-items: center;
+        order: 2;
+        text-align: center;
     }
 
     .nav-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(18, 18, 18, 0.95);
+        z-index: 999;
+        
         display: none;
-        width: 100%;
-        order: 4;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .nav-bar ul {
-        justify-content: center;
-        flex-wrap: wrap;
+        display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 0;
-        padding: 15px 0;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
     }
 
     .nav-bar li {
@@ -812,14 +824,15 @@ h1, h2, h3, h4 {
     }
 
     .nav-bar a {
-        font-size: 13px;
-        padding: 12px;
-        display: block;
+        font-size: 18px;
+        text-align: center;
     }
 
     .reserve-btn {
-        margin-top: 0;
         order: 3;
+        padding: 6px 12px !important;
+        font-size: 12px !important;
+        white-space: nowrap;
     }
 
     .nav-bar a:hover,
@@ -855,11 +868,8 @@ h1, h2, h3, h4 {
     }
 
     .menu-icon {
-        display: flex;
-        flex-direction: column;
-        gap: 6px;
-        cursor: pointer;
-        order: 2;
+        order: 1;
+        margin: 0;
     }
 
     .menu-icon span {
@@ -870,7 +880,7 @@ h1, h2, h3, h4 {
     }
 
     .menu-toggle:checked ~ .nav-bar {
-        display: block;
+        display: flex;
     }
 }
 
@@ -980,9 +990,6 @@ h1, h2, h3, h4 {
 }
 
 @media (max-width: 480px) {
-    .nav-bar ul {
-        gap: 12px;
-    }
 
     .nav-bar a:hover,
     .nav-bar a:focus-visible {
